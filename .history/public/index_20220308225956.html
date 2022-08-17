@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Townwarta</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+    <body>
+        <main>
+             <form class= "form makenews">
+        <div>
+              <label for= "newstitle" class= "newstitle-label">TITLE</label><br><br>
+              <input type = "text" class = "newstitle-input"></input><br><br>
+        </div>
+       
+        <div>
+              <label for= "newsheading" class= "newsheading-label">Heading</label><br><br>
+              <textarea name="heading" class="newsheading" ></textarea><br><br>
+        </div>
+ <div>
+                <label for= "newsarticle" class= "news-label">NewsArticle</label><br><br>
+                <textarea name=" newsarticle" cols="30" rows="10"></textarea><br><br>
+            </div>   
+            <div>
+                <label for="newsimages"></label><br><br>
+                <input type="file" name="newsimage" multiple><br><br>
+            </div>
+            <div>
+                <label for="tags" class="tags">SelectTags</label><br><br>
+                <select class="tags" multiple>
+                    <option value="sports">SPORTS</option>
+                    <option value="health">HEALTH</option>
+                    <option value="politics">POLITICS</option>
+                    <option value="security">SECURITY</option>
+                    <option value="international">INTERNATIONAL</option>
+                    <option value="bollywood">BOLLYWOOD</option>
+                </select><br><br>
+            </div> 
+            <div>
+                <label for="tags" class="tags">SelectStates</label><br><br>
+                <select class="tags" multiple>
+                    <option value="UTTARPRADESH">UTTARPRADESH</option>
+                    <option value="MAHARASHTRA">MAHARASHTRA</option>
+                    <option value="GUJRAT">GUJRAT</option>
+                    <option value="PANJAB">PANJAB</option>
+                    <option value="TAMILNADU">TAMILNADU</option>
+                    <option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+                </select><br><br>
+            </div>  
+            
+                <button type = "submit" class="form-submit">SUBMIT NEWS DATA</button>
+             
+            </form>
+
+        </main>
+
+  
+
+<script>
+ src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+</script>
+<script src= "./browser-app.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JWT Basics</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+  </head>
+  <body>
+    <main>
+      <form class="form contact-form">
+        <h5>login/register</h5>
+        <div class="form-row">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-input username-input" />
+        </div>
+        <div class="form-row">
+          <label for="password" class="form-label">password</label>
+          <input type="password" class="form-input password-input" />
+        </div>
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block">submit</button>
+      </form>
+      <div class="container">
+        <h4>Dashboard</h4>
+        <p class="token">no token present</p>
+        <div class="result"></div>
+        <button class="btn btn-block" id="data">get data</button>
+      </div>
+      <div id="root"></div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./browser-app.js"></script>
+  
+  </body>
+</html>

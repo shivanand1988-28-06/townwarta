@@ -1,0 +1,26 @@
+.makenews{
+    text-align: center;
+    padding-top: 40px;
+};
+.newstitle-label{
+   padding-bottom: 0px;
+   color:blue;
+}
+.newstitle-input{
+    color:brown;
+};
+.newsheading{
+   
+    color:blue
+};
+.form{
+    background-color: rgb(87, 182, 182);
+  };
+.form-row{
+   padding: 50px;
+   text-align: center;
+};
+.text-small{
+    color:blue
+}
+
