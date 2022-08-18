@@ -1,52 +1,40 @@
 
-// const formDOM = document.querySelector('.form');
-// const usernameInputDOM = document.querySelector('.username-input');
-// const passwordInputDOM = document.querySelector('.password-input');
-// const btnDOM = document.querySelector('#data');
-// const resultDOM = document.querySelector('.result');
+const formDOM = document.querySelector('.form');
+const usernameInputDOM = document.querySelector('.username-input');
+const passwordInputDOM = document.querySelector('.password-input');
+const btnDOM = document.querySelector('#data');
+const resultDOM = document.querySelector('.result');
 
-// formDOM.addEventListener('submit',async(e)=>{
-//    e.preventDefault();
-//     const username = usernameInputDOM.value
-//     const password = passwordInputDOM.valuey
+formDOM.addEventListener('submit',async(e)=>{
+   e.preventDefault();
+    const username = usernameInputDOM.value
+    const password = passwordInputDOM.valuey
 
-//     const newsheading = textDOM.value;
+    const newsheading = textDOM.value;
 
-// try{  
+try{  
 
-// const {data} = await axios.post('/api/v1/news/users',{username,password})
+const {data} = await axios.post('/api/v1/news/users',{username,password})
   
-// }catch(error){
-//         console.log(error);
-// }
+}catch(error){
+        console.log(error);
+}
   
 
-//      }
-// );
+     }
+);
 
-// btnDOM.addEventListener('click',async(e)=>{
-//         const {data} = await axios.get('/api/v1/news/users',(e)=>{console.log({data})}
+btnDOM.addEventListener('click',async(e)=>{
+        const {data} = await axios.get('/api/v1/news/users',(e)=>{console.log({data})}
       
-//         );
-//         resultDOM.innerHTML = `<h1>${data.username}</h1>`;
-// }
+        );
+        resultDOM.innerHTML = `<h1>${data.username}</h1>`;
+}
 
-// )
-const React = require('react');
+)
 
-function Newform (){
-    const name = "shiva";
-       return( 
-       <>
-          <h1> hiiiii {name}</h1>
-       </>
-       );
-     
-     };
-     
-    const element = <Newform/> 
-   
-     ReactDOM.render(element,document.getElementById("root"));
+
+
 
 
 
@@ -98,6 +86,8 @@ function Newform (){
 //   try {
 //     const { data } = await axios.get('/api/v1/users', {
 //       headers: {
+
+
 //         Authorization: `Bearer ${token}`,
 //       },
 //     })
