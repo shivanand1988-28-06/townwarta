@@ -15,15 +15,20 @@
   "dependencies": {
     "axios": "^0.26.0",
     "deploy-to-github-pages": "^1.0.1",
+    "dompurify": "^2.3.12",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.8",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
+    "marked": "^4.0.19",
+    "method-override": "^3.0.0",
     "mongodb": "^4.4.0",
     "mongoose": "^6.5.2",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "rest": "^2.0.0",
+    "slugify": "^1.6.5",
     "styled-component": "^2.8.0"
   },
   "devDependencies": {
