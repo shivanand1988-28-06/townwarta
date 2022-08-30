@@ -10,8 +10,8 @@
 <body>
   <div >
     <div style = "width:18% ; float : left"><image src = "/images/townwarta.png" style = "height:200px ; width:250px ;"  alt = "images"/></div>
-   <div style = "width:82% ; height : 200px ; float :right ; padding-top: 80px; text-decoration: underline;">  <h1  style = "color:rgba(102, 12, 39, 0.877) ;   " >Townwarta NEWS</h1>
-  <a style = "padding-left:20px" href = "/">sports</a> <a  style = "padding-left:20px" href = "/">politics</a> <a  style = "padding-left:20px" href = "/">curruption</a> <a style = "padding-left:20px" href = "/">Uttarakhand</a> <a style = "padding-left:20px" href = "/">Maharashtra</a> <a style = "padding-left:20px" href = "/">Mumbai</a> <a style = "padding-left:20px" href = "/">Delhi</a> <a style = "padding-left:20px" href = "/">townwarta-special</a>
+   <div style = "width:82% ; height : 200px ; float :right ; padding-top: 80px;"><h1  style = "color:rgba(142, 155, 29, 0.342) ;   " >Townwarta Articles</h1><br>
+  <a style = "padding-left:20px" href = "/">sports</a> <a  style = "padding-left:20px" href = "/">politics</a> <a  style = "padding-left:20px" href = "/">curruption</a> <a style = "padding-left:20px" href = "/">Uttarakhand</a> <a style = "padding-left:20px" href = "/">Maharashtra</a> <a style = "padding-left:20px" href = "/">Mumbai</a> <a style = "padding-left:20px" href = "/">Delhi</a>
   </div>
     
   </div>
@@ -25,7 +25,7 @@
             <%= article.createdAt.toLocaleDateString() %>
           </div>
           <div class="card-text mb-2"><%= article.description %></div>
-          <a href="articles/<%= article.slug %>" class="btn btn-danger">Read More</a>
+          <a href="articles/<%= article.slug %>" class="btn btn-primary">Read More</a>
           <!-- <a href="articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
           <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
             <button type="submit" class="btn btn-danger">Delete</button>

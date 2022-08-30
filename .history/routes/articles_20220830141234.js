@@ -43,8 +43,8 @@ function saveArticleAndRedirect(path) {
  
   return async (req, res) => {
 
-   console.log(req.body.title,req.article);
 
+    console.log(req.body.title,req.article);
     let article = req.body
     article.title = req.body.title
     article.description = req.body.description
@@ -58,15 +58,11 @@ function saveArticleAndRedirect(path) {
 
       article = await article.save();
       
-      // res.redirect(`/articles/${article.slug}`);
+      res.redirect(`/articles/${article.slug}`);
 
-    }
-
-     catch (e) 
-
-     {
+    } catch (e) {
       res.render(`articles/${path}`, { article: article })
-     }
+    }
 
 
   }

@@ -16,11 +16,11 @@ router.get('/edit/:id', async (req, res) => {
   res.render('articles/edit', { article: article })
 })
 
-// router.get('/:slug', async (req, res) => {
-//   const article = await Article.findOne({ slug: req.params.slug })
-//   if (article == null) res.redirect('/')
-//   res.render('articles/show', { article: article })
-// })
+router.get('/:slug', async (req, res) => {
+  const article = await Article.findOne({ slug: req.params.slug })
+  if (article == null) res.redirect('/')
+  res.render('articles/show', { article: article })
+})
 
 router.post('/', async (req, res, next) => {
   req.article = new Article()
@@ -42,9 +42,7 @@ router.delete('/:id', async (req, res) => {
 function saveArticleAndRedirect(path) {
  
   return async (req, res) => {
-
-   console.log(req.body.title,req.article);
-
+    console.log(req.body.title,req.article);
     let article = req.body
     article.title = req.body.title
     article.description = req.body.description
@@ -58,17 +56,11 @@ function saveArticleAndRedirect(path) {
 
       article = await article.save();
       
-      // res.redirect(`/articles/${article.slug}`);
+      res.redirect(`/articles/${article.slug}`);
 
-    }
-
-     catch (e) 
-
-     {
+    } catch (e) {
       res.render(`articles/${path}`, { article: article })
-     }
-
-
+    }
   }
 }
 
