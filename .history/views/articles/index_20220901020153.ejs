@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TOWNWARTA</title>
+</head>
+<body>
+  <div >
+    <div style = "width:18% ; float : left"><image src = "/images/townwarta.png" style = "height:200px ; width:250px ;"  alt = "images"/></div>
+   <div style = "width:82% ; height : 200px ; float :right ; padding-top: 80px; text-decoration: underline;">  <h1  style = "color:rgba(102, 12, 39, 0.877) ;   " >Townwarta NEWS</h1>
+  <a style = "padding-left:20px" href = "/">sports</a> <a  style = "padding-left:20px" href = "/">politics</a> <a  style = "padding-left:20px" href = "/">curruption</a> <a style = "padding-left:20px" href = "/">Uttarakhand</a> <a style = "padding-left:20px" href = "/">Maharashtra</a> <a style = "padding-left:20px" href = "/">Mumbai</a> <a style = "padding-left:20px" href = "/">Delhi</a> <a style = "padding-left:20px" href = "/">townwarta-special</a>
+  </div>
+    
+  </div>
+  <div class="container" >
+
+<% articles.forEach(article => { %>
+      <div class="card mt-4">
+        <% if (article.image){%>
+          <img src = "./images/<%= article.image %>" class = "card-img" alt="image" width = "10">
+        <%} %>
+       
+        <div class="card-body">
+
+          <h4 class="card-title"><%= article.title %></h4>
+          <div class="card-subtitle text-muted mb-2">
+            <%= article.createdAt.toLocaleDateString() %>
+          </div>
+          <div class="card-text mb-2"><%= article.description %></div>
+          <a href="articles/<%= article.slug %>" class="btn btn-danger">Read More</a>
+          <!-- <a href="articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+          <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form> -->
+        </div>
+      </div>
+    <% }) %>
+    <div class = "container"  style =  "margin-top : 20px"  > 
+    <a href="/articles/new" class="btn btn-success">New Article</a>
+  </div>
+  </div>
+</body>
+</html>
